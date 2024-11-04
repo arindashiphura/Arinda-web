@@ -1,4 +1,4 @@
-/**
+       /**
 *
 */
 
@@ -1193,9 +1193,25 @@ section .container {
   top: 0;
   right: 0;
   margin-right: 450px; /* Optional: adds some margin from the top and right edges */
-  width: 400px; /* Adjust the size as needed */
-  height: auto; /* Maintain the aspect ratio */
-  margin-bottom: 80px;
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Set this to the same value as width for a perfect circle */
+  border-radius: 50%; /* This creates the circular shape */
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  margin-bottom: 50px;
   margin-top: 150px;
-};
+}
 
+
+.top-left-image {
+  position: relative; /* Use relative positioning for positioning within the column */
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Set this to the same value as width for a perfect circle */
+  border-radius: 50%; /* This creates the circular shape */
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  margin: 0 auto; /* Centers the image in the column */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; /* This makes images responsive */
+}
